@@ -71,7 +71,7 @@ class Crosstab:
         pf = ncf / nf
         ps = ncs / ns
 
-        print("judge result:" + str(ns / (nf + ns)))
+        #print("judge result:" + str(ns / (nf + ns)))
 
         if ps == 0:
             return 2

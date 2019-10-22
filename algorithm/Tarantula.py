@@ -18,7 +18,7 @@ class Tarantula:
         nus = statementCoverage[3]
         nf = ncf + nuf
         ns = ncs + nus
-        print("judge result:" + str(ns/(nf+ns)))
+        #print("judge result:" + str(ns/(nf+ns)))
         if nf != 0 and ns != 0 and (ncf / nf) + (ncs / ns) != 0:
             return (ncf / nf) / ((ncf / nf) + (ncs / ns))
         else:
