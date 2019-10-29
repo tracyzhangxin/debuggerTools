@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab629d17-290a-48d5-ad78-f8080b5e6e50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/present/Frame.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User Manual.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/present/sortUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/present/sortUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/present/sorts.py" beforeDir="false" afterPath="$PROJECT_DIR$/present/sorts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/suite/quick_sort_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/suite/quick_sort_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/present/Frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/present/Frame.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +24,7 @@
   <component name="ProjectId" id="1S5pKa4kFbSyV7hW7Rs5emQ2uGj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/testcase/sort" />
@@ -189,7 +186,7 @@
       <workItem from="1570863253205" duration="2404000" />
       <workItem from="1570955525703" duration="3258000" />
       <workItem from="1571122011653" duration="14159000" />
-      <workItem from="1571632191027" duration="43424000" />
+      <workItem from="1571632191027" duration="43640000" />
     </task>
     <servers />
   </component>

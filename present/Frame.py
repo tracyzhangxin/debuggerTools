@@ -127,7 +127,7 @@ class MyFrame(wx.Frame):
         if check == 0:
             self.text_contents.AppendText("You must provide a test suite containing both successful abd failed test cases.")
         else:
-            self.text_contents.AppendText("The most suspicious line:\n")
+            self.text_contents.AppendText("The suspiciousness result of program:\n")
             self.text_contents.AppendText("\tLine\tRank\n")
             if len(suspiciousnessRank) >= 10:
                 for item in suspiciousnessRank:
