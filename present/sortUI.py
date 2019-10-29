@@ -53,6 +53,7 @@ def main():
     subcode = input("please input the sort code name: ")
     sourcecode = sourcecode + subcode
 
+
     if not os.path.isfile(sourcecode):
         print(sourcecode + "is not file")
         exit(1)

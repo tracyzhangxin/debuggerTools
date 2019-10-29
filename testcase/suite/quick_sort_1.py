@@ -6,11 +6,11 @@ def swap(array,i,j):
 def partition(array, start,end):
     x = array[end]
     i = start -1
-    for j in range(start+1, end):
+    for j in range(start, end):
         if (array[j] <= x):
             i = i+1
             swap (array,i,j)
-        swap(array,i+1,end)     #error!!! should be moved forward
+    swap(array,i+1,end)     #error!!! should be moved forward
     return i+1
 
 def quicksort(array,p,r):
