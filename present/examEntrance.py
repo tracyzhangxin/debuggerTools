@@ -126,7 +126,7 @@ def getPercent(list_result):
             percent_count[8] += 1
         elif (list_result[i] <= 0.9):
             percent_count[9] += 1
-        elif (list_result[i] <= 0.1):
+        elif (list_result[i] <= 1):
             percent_count[10] += 1
 
     percent = percent_count / versions
@@ -163,17 +163,17 @@ if __name__ == '__main__':
 
     # 1:Tarantula; 2:CrossTab; 3:Jaccard :
 
-    print(main(3))
+    print(main(1))
 
     end = time.time()
     print("Time used:", end - start)
 
-    # 1：[0.12, 0.2, 0.08, 0.24, 0.12, 0.12, 0.08, 0.0, 0.0, 0.0, 0.0]
+    # 1：[0.12, 0.2, 0.08, 0.24, 0.12, 0.12, 0.08, 0.0, 0.0, 0.0, 0.04]
     # 1：Time used: 1226.7787761688232
 
-    # 2：[0.12, 0.2, 0.12, 0.2, 0.16, 0.08, 0.08, 0.0, 0.0, 0.0, 0.0]
+    # 2：[0.12, 0.2, 0.12, 0.2, 0.16, 0.08, 0.08, 0.0, 0.0, 0.0, 0.04]
     # 2：Time used: 1182.7200479507446
 
-    # 3：[0.12, 0.24, 0.12, 0.2, 0.12, 0.08, 0.08, 0.0, 0.0, 0.0, 0.0]
+    # 3：[0.12, 0.24, 0.12, 0.2, 0.12, 0.08, 0.08, 0.0, 0.0, 0.0, 0.04]
     # 3：Time used: 1131.2345170974731
 
