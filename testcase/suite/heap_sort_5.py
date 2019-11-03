@@ -8,14 +8,14 @@ def Build_heap(size,elements):
 
 def heap_sort(nos):
     global size
-    size = len(nos)
+    size = len(nos)-1   #error!!!! should be ==> size = len(nos)
     #print "the size of the List is : %d " %size
     Build_heap(size,nos)
     for i in range(size-1,0,-1):
         nos[0],nos[i] = nos[i],nos[0]
         size = size-1
         #print "\n", nums
-        heapify(nos,i,size)     #error!!!! should be ==> heapify(nos, 0, size)
+        heapify(nos,0,size)
     #print "heap sort array:" ,nums
     return nos
 

@@ -4,8 +4,8 @@ def merge(array, p, q, r):
     left_array = []
     right_array = []
 
-    k = q #error!!! should be ==> k = p
-    while (k <= q):
+    k = p
+    while (k <= p): #error!!! should be ==> k <= q
         left_array.append(array[k])
         k += 1
     while (k <= r):

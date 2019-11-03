@@ -4,7 +4,7 @@ def merge(array, p, q, r):
     left_array = []
     right_array = []
 
-    k = q #error!!! should be ==> k = p
+    k = p
     while (k <= q):
         left_array.append(array[k])
         k += 1
@@ -14,7 +14,7 @@ def merge(array, p, q, r):
 
     k = p
     i = 0
-    j = 0
+    j = 1   # should be :j=0
     while (i < len(left_array) and j < len(right_array)):
         if (left_array[i] <= right_array[j]):
             array[k] = left_array[i]

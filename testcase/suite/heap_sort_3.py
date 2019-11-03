@@ -15,7 +15,7 @@ def heap_sort(nos):
         nos[0],nos[i] = nos[i],nos[0]
         size = size-1
         #print "\n", nums
-        heapify(nos,i,size)     #error!!!! should be ==> heapify(nos, 0, size)
+        heapify(nos,0,size)
     #print "heap sort array:" ,nums
     return nos
 
@@ -32,7 +32,7 @@ def heapify(nums,i,size):
         if r != size:
             if nums[l] >= nums[r]:
                 max = nums[l]
-                max_index = l
+                max_index = r   #error!!!! should be ==> max_index = r
             elif nums[l] <= nums[r]:
                 max = nums[r]
                 max_index = r

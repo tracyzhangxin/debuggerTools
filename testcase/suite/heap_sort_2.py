@@ -1,6 +1,6 @@
 # build a heap A from an unsorted array
 def Build_heap(size,elements):
-    iterate = size//2-1
+    iterate = size//2 #error!!!! should be ==> iterate = size//2-1
     for i in range(iterate,-1,-1):
         #print "In %d iteration" %i
         heapify(elements,i,size)
@@ -15,7 +15,7 @@ def heap_sort(nos):
         nos[0],nos[i] = nos[i],nos[0]
         size = size-1
         #print "\n", nums
-        heapify(nos,i,size)     #error!!!! should be ==> heapify(nos, 0, size)
+        heapify(nos,0,size)
     #print "heap sort array:" ,nums
     return nos
 

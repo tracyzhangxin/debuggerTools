@@ -1,8 +1,8 @@
 # insertion sort
 def insertion_sort(numbers):
     for i in range(len(numbers) - 1):
-        position = 0# error!!! should be ==> position = i
-        while position > 0 and numbers[position] < numbers[position - 1]:
+        position = i
+        while position > 1 and numbers[position] < numbers[position - 1]: # error!!! should be ==> position > 0
             # print("Position:",numbers[position])
             # print("Position-1:",numbers[position-1])
             temp = numbers[position - 1]

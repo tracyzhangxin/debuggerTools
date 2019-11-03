@@ -11,12 +11,12 @@ def bubble_sort(array):
         while InnerLoop < TotalNumberofLoops:
             if array[OuterLoop] < array[InnerLoop]:
                 numchange = array[InnerLoop]
-                array[OuterLoop] = array[InnerLoop]  # error!!!! should be ==> array[InnerLoop] = array[OuterLoop]
-                array[InnerLoop] = numchange
+                array[InnerLoop] = array[OuterLoop]
+                array[OuterLoop] = numchange
 
             InnerLoop = InnerLoop + 1
         # print array
-        OuterLoop = OuterLoop + 1
+        OuterLoop = OuterLoop + 2   # error!!!! should be ==> OuterLoop = OuterLoop + 1
 
     return array
 

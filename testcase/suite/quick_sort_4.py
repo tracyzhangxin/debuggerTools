@@ -1,7 +1,7 @@
 def swap(array,i,j):
     temp = array[i]
     array[i] = array[j]
-    array[j] = temp
+    array[j] = array[i] #error!!! should be      array[j] = temp
 
 def partition(array, start,end):
     x = array[end]
@@ -10,7 +10,7 @@ def partition(array, start,end):
         if (array[j] <= x):
             i = i+1
             swap (array,i,j)
-    swap(array,i,end)     #error!!! should be       swap(array,i+1,end)
+    swap(array,i+1,end)
     return i+1
 
 def quicksort(array,p,r):

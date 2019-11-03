@@ -4,7 +4,7 @@ def merge(array, p, q, r):
     left_array = []
     right_array = []
 
-    k = q #error!!! should be ==> k = p
+    k = p
     while (k <= q):
         left_array.append(array[k])
         k += 1
@@ -41,7 +41,7 @@ def merge_sort(array, p, r):
     if p < r:
         q = floor((p + r) / 2)
         merge_sort(array, p, q)
-        merge_sort(array, q + 1, r)
+        merge_sort(array, q+1, r)
         merge(array, p, q, r)
     return array
 
@@ -51,7 +51,7 @@ def main():
     a = []
     for i in range(n):
         a.append(int(input()))
-    b = merge_sort(a, 0, len(a)-1)
+    b = merge_sort(a, 1, len(a)-1) #error!!! should be ==> merge_sort(a, 1, len(a)-1)
     for e in b:
         print(e)
 

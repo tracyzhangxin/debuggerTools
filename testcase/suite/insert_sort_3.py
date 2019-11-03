@@ -1,12 +1,12 @@
 # insertion sort
 def insertion_sort(numbers):
     for i in range(len(numbers) - 1):
-        position = 0# error!!! should be ==> position = i
+        position = i
         while position > 0 and numbers[position] < numbers[position - 1]:
             # print("Position:",numbers[position])
             # print("Position-1:",numbers[position-1])
             temp = numbers[position - 1]
-            numbers[position - 1] = numbers[position]
+            numbers[position + 1] = numbers[position] # error!!! should be ==> numbers[position - 1]
             numbers[position] = temp
             # print("New value of position",numbers[position])
 

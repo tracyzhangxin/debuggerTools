@@ -4,13 +4,13 @@ def swap(array,i,j):
     array[j] = temp
 
 def partition(array, start,end):
-    x = array[end]
+    x = array[start]  #error!!! should be      x = array[end]
     i = start -1
     for j in range(start, end):
         if (array[j] <= x):
             i = i+1
             swap (array,i,j)
-    swap(array,i,end)     #error!!! should be       swap(array,i+1,end)
+    swap(array,i+1,end)
     return i+1
 
 def quicksort(array,p,r):
