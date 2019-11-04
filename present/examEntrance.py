@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from utils import CoverageUtil, JudgeResult, ResultStorge
 import os
 import numpy as np

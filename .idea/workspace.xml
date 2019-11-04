@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab629d17-290a-48d5-ad78-f8080b5e6e50" name="Default Changelist" comment="添加了最后的3种算法的统计结果，并且输出3个算法的总共用时">
+      <change beforePath="$PROJECT_DIR$/.idea/DebuggerTools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DebuggerTools.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/present/.coverage" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/present/examEntrance.py" beforeDir="false" afterPath="$PROJECT_DIR$/present/examEntrance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/88.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/sorts.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sortUI">
+  <component name="RunManager" selected="Python.examEntrance">
     <configuration name="Frame" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DebuggerTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sortUI" />
         <item itemvalue="Python.examEntrance" />
+        <item itemvalue="Python.sortUI" />
         <item itemvalue="Python.Frame" />
         <item itemvalue="Python.sorts" />
         <item itemvalue="Python.genarate" />
@@ -196,6 +195,7 @@
       <workItem from="1572761037284" duration="2748000" />
       <workItem from="1572772882171" duration="209000" />
       <workItem from="1572775416562" duration="726000" />
+      <workItem from="1572867165066" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="添加了最后的3种算法的统计结果，并且输出3个算法的总共用时">
       <created>1572768872214</created>
@@ -228,14 +228,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="添加了最后的3种算法的统计结果，并且输出3个算法的总共用时" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DebuggerTools$CoverageUtil.coverage" NAME="CoverageUtil Coverage Results" MODIFIED="1571646348028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/DebuggerTools$examEntrance.coverage" NAME="examEntrance Coverage Results" MODIFIED="1572867207298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/DebuggerTools$genarate.coverage" NAME="genarate Coverage Results" MODIFIED="1571723269867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/DebuggerTools$Frame.coverage" NAME="Frame Coverage Results" MODIFIED="1572351949897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
+    <SUITE FILE_PATH="coverage/debuggerTools$sortUI.coverage" NAME="sortUI Coverage Results" MODIFIED="1572776784709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/debuggerTools$Frame.coverage" NAME="Frame Coverage Results" MODIFIED="1572775427114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/debuggerTools$examEntrance.coverage" NAME="examEntrance Coverage Results" MODIFIED="1572775508047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
-    <SUITE FILE_PATH="coverage/debuggerTools$sortUI.coverage" NAME="sortUI Coverage Results" MODIFIED="1572776784709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
-    <SUITE FILE_PATH="coverage/DebuggerTools$sorts.coverage" NAME="sorts Coverage Results" MODIFIED="1572350368231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
+    <SUITE FILE_PATH="coverage/DebuggerTools$Frame.coverage" NAME="Frame Coverage Results" MODIFIED="1572351949897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/DebuggerTools$sortUI.coverage" NAME="sortUI Coverage Results" MODIFIED="1571725778646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
+    <SUITE FILE_PATH="coverage/DebuggerTools$sorts.coverage" NAME="sorts Coverage Results" MODIFIED="1572350368231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
+    <SUITE FILE_PATH="coverage/DebuggerTools$CoverageUtil.coverage" NAME="CoverageUtil Coverage Results" MODIFIED="1571646348028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/DebuggerTools$JudgeResult.coverage" NAME="JudgeResult Coverage Results" MODIFIED="1571233034677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
 </project>
