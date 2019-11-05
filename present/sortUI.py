@@ -1,3 +1,4 @@
+# coding=utf-8
 from utils import CoverageUtil, JudgeResult, ResultStorge
 import os
 
@@ -49,8 +50,8 @@ def main():
     testSuite = "../testcase/sort"
     coverageUtil = CoverageUtil.CoverageUtil()
     judgeResult = JudgeResult.JudgeResult()
-    type = input("please input the debugger algorithm: 1:Tarantula; 2:CrossTab; 3:Jaccard : ")
-    subcode = input("please input the sort code name: ")
+    type = raw_input("please input the debugger algorithm: 1:Tarantula; 2:CrossTab; 3:Jaccard : ")
+    subcode = raw_input("please input the sort code name: ")
     sourcecode = sourcecode + subcode
 
 
