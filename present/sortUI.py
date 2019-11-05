@@ -85,7 +85,9 @@ def main():
     coverageUtil.clear()
     coverageList = coverageUtil.getLineCoverage(coverageUtil.lines, resultStorge.records)
     resultlist = resultStorge.rankBySuspiciousness(coverageList)
+    print('==============')
     print(resultlist)
+    print('==============')
     generateReport(resultlist)
 
 
