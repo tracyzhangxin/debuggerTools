@@ -226,6 +226,17 @@
     <MESSAGE value="添加了最后的3种算法的统计结果，并且输出3个算法的总共用时" />
     <option name="LAST_COMMIT_MESSAGE" value="添加了最后的3种算法的统计结果，并且输出3个算法的总共用时" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/present/sortUI.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DebuggerTools$examEntrance.coverage" NAME="examEntrance Coverage Results" MODIFIED="1572867207298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/DebuggerTools$genarate.coverage" NAME="genarate Coverage Results" MODIFIED="1571723269867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
