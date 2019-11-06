@@ -40,9 +40,10 @@ class MyFrame(wx.Frame):
         # self.list.InsertColumn(0, 'Line', width=100)
         # self.list.InsertColumn(1, 'Rank', width=100)
         self.grid = wx.grid.Grid(panel, -1)
-        self.grid.CreateGrid(0, 2)
+        self.grid.CreateGrid(0, 3)
         self.grid.SetColLabelValue(0, "Line")
-        self.grid.SetColLabelValue(1, "Rank")
+        self.grid.SetColLabelValue(1, "RankBest")
+        self.grid.SetColLabelValue(2, "RankWorst")
         #self.grid.AppendRows(1, False)
         #self.grid.SetCellValue(0,0, "1")
 
@@ -130,10 +131,24 @@ class MyFrame(wx.Frame):
         coverageUtil.clear()
         coverageList = coverageUtil.getLineCoverage(coverageUtil.lines, resultStorge.records)
         resultlist = resultStorge.rankBySuspiciousness(coverageList)
+        rankResult = resultStorge.rankBySuspiciousnessBest(resultlist)
+        rankResult2 = resultStorge.rankBySuspiciousnessWorst(resultlist)
 
         #self.text_contents.AppendText(str(resultlist));
-        self.generateReport(resultlist)
+        self.generateReportV2([rankResult, rankResult2])
         wx.CallAfter(dialog.Destroy)
+
+
+    def generateReportV2(self, suspiciousnessRank):
+        i = 0
+        for i in range(0, len(suspiciousnessRank[0])):
+            best = suspiciousnessRank[0]
+            worst = suspiciousnessRank[1]
+            self.grid.AppendRows(1, False)
+            self.grid.SetCellValue(i, 0, str(best[i][0]))
+            self.grid.SetCellValue(i, 1, str(best[i][1]))
+            self.grid.SetCellValue(i, 2, str(worst[i][1]))
+            i+=1
 
     def generateReport(self, suspiciousnessRank):
         count = 0
@@ -173,10 +188,8 @@ class MyFrame(wx.Frame):
         thread.start()
 
     def reSet(self, event):
-        #self.text_contents.flush()
-        #self.text_contents.SetValue("")
-        #self.list.ClearAll()
-        print(1)
+        self.grid.ClearGrid()
+        self.grid.DeleteRows(0, 100)
 
 
 if __name__ == '__main__':

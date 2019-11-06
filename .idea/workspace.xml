@@ -2,102 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab629d17-290a-48d5-ad78-f8080b5e6e50" name="Default Changelist" comment="添加了最后的3种算法的统计结果，并且输出3个算法的总共用时">
-      <change afterPath="$PROJECT_DIR$/present/chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/present/grid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DebuggerTools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DebuggerTools.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/Tarantula.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/Tarantula.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/present/Frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/present/Frame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/present/sortUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/present/sortUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/1.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/10.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/11.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/12.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/13.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/14.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/15.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/16.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/17.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/18.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/19.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/2.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/20.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/21.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/22.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/23.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/24.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/25.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/26.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/27.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/28.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/29.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/3.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/30.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/31.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/32.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/33.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/34.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/35.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/36.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/37.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/38.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/39.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/4.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/40.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/41.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/42.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/43.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/44.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/45.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/46.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/47.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/48.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/49.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/5.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/50.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/51.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/52.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/53.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/54.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/55.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/56.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/57.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/58.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/59.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/6.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/60.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/61.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/62.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/63.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/64.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/65.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/66.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/67.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/68.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/69.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/7.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/70.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/71.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/72.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/73.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/74.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/75.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/76.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/77.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/78.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/79.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/8.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/80.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/81.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/82.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/83.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/84.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/85.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/86.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/87.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/sort/9.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/ResultStorge.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ResultStorge.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,7 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sortUI">
+  <component name="RunManager" selected="Python.Frame">
     <configuration name="Frame" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DebuggerTools" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,8 +168,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sortUI" />
         <item itemvalue="Python.Frame" />
+        <item itemvalue="Python.sortUI" />
         <item itemvalue="Python.grid" />
         <item itemvalue="Python.chart" />
         <item itemvalue="Python.examEntrance" />
@@ -288,7 +194,7 @@
       <workItem from="1572772882171" duration="209000" />
       <workItem from="1572775416562" duration="726000" />
       <workItem from="1572867165066" duration="85000" />
-      <workItem from="1572926964019" duration="18016000" />
+      <workItem from="1572926964019" duration="19344000" />
     </task>
     <task id="LOCAL-00001" summary="添加了最后的3种算法的统计结果，并且输出3个算法的总共用时">
       <created>1572768872214</created>
@@ -328,8 +234,8 @@
     <SUITE FILE_PATH="coverage/DebuggerTools$chart.coverage" NAME="chart Coverage Results" MODIFIED="1572936076251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/debuggerTools$Frame.coverage" NAME="Frame Coverage Results" MODIFIED="1572775427114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/debuggerTools$examEntrance.coverage" NAME="examEntrance Coverage Results" MODIFIED="1572775508047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
-    <SUITE FILE_PATH="coverage/DebuggerTools$Frame.coverage" NAME="Frame Coverage Results" MODIFIED="1573019923442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/DebuggerTools$sortUI.coverage" NAME="sortUI Coverage Results" MODIFIED="1573022618866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
+    <SUITE FILE_PATH="coverage/DebuggerTools$Frame.coverage" NAME="Frame Coverage Results" MODIFIED="1573024721713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/DebuggerTools$sorts.coverage" NAME="sorts Coverage Results" MODIFIED="1572350368231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/present" />
     <SUITE FILE_PATH="coverage/DebuggerTools$CoverageUtil.coverage" NAME="CoverageUtil Coverage Results" MODIFIED="1571646348028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/DebuggerTools$JudgeResult.coverage" NAME="JudgeResult Coverage Results" MODIFIED="1571233034677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
