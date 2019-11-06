@@ -50,8 +50,8 @@ def main():
     testSuite = "../testcase/sort"
     coverageUtil = CoverageUtil.CoverageUtil()
     judgeResult = JudgeResult.JudgeResult()
-    type = raw_input("please input the debugger algorithm: 1:Tarantula; 2:CrossTab; 3:Jaccard : ")
-    subcode = raw_input("please input the sort code name: ")
+    type = input("please input the debugger algorithm: 1:Tarantula; 2:CrossTab; 3:Jaccard : ")
+    subcode = input("please input the sort code name: ")
     sourcecode = sourcecode + subcode
 
 
@@ -85,7 +85,8 @@ def main():
     coverageUtil.clear()
     coverageList = coverageUtil.getLineCoverage(coverageUtil.lines, resultStorge.records)
     resultlist = resultStorge.rankBySuspiciousness(coverageList)
-    print(resultlist)
+    #print(resultlist)
+    #print(resultStorge.rankBySuspiciousnessWorst(resultlist))
     generateReport(resultlist)
 
 

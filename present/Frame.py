@@ -6,6 +6,8 @@ import time
 import threading
 from utils import CoverageUtil, JudgeResult, ResultStorge
 import os
+import wx.grid
+import sys
 
 class MyFrame(wx.Frame):
     def __init__(self, parent, id):
@@ -31,7 +33,20 @@ class MyFrame(wx.Frame):
         self.ch2 = wx.ComboBox(panel, 0, choices=list2, style=wx.TE_READONLY)
 
         # 创建文本内容框，多行，垂直滚动条
-        self.text_contents = wx.TextCtrl(panel, style=wx.TE_MULTILINE | wx.HSCROLL | wx.TE_READONLY)
+        #self.text_contents = wx.TextCtrl(panel, style=wx.TE_MULTILINE | wx.HSCROLL | wx.TE_READONLY)
+
+        # 创建表格
+        # self.list = wx.ListCtrl(panel, style= wx.LC_REPORT)
+        # self.list.InsertColumn(0, 'Line', width=100)
+        # self.list.InsertColumn(1, 'Rank', width=100)
+        self.grid = wx.grid.Grid(panel, -1)
+        self.grid.CreateGrid(0, 2)
+        self.grid.SetColLabelValue(0, "Line")
+        self.grid.SetColLabelValue(1, "Rank")
+        #self.grid.AppendRows(1, False)
+        #self.grid.SetCellValue(0,0, "1")
+
+
 
         # 添加容器，容器中控件按横向并排排列
         bsizer_top = wx.BoxSizer(wx.VERTICAL)
@@ -51,7 +66,9 @@ class MyFrame(wx.Frame):
         bsizer_center.Add(self.ch2, proportion=2, flag=wx.EXPAND | wx.ALL, border=5)
         bsizer_center.Add(self.bt_open, proportion=1, flag=wx.ALL, border=5)
         bsizer_center.Add(self.bt_reset, proportion=0, flag=wx.ALL, border=5)
-        bsizer_bottom.Add(self.text_contents, proportion=1, flag=wx.EXPAND | wx.ALL, border=5)
+        #bsizer_bottom.Add(self.text_contents, proportion=1, flag=wx.EXPAND | wx.ALL, border=5)
+        bsizer_bottom.Add(self.grid, proportion=1, flag=wx.EXPAND | wx.ALL, border=5)
+        #bsizer_bottom.Add(self.list, proportion=1, flag=wx.EXPAND | wx.ALL, border=5)
         # wx.VERTICAL 横向分割
         bsizer_all = wx.BoxSizer(wx.VERTICAL)
 
@@ -70,6 +87,7 @@ class MyFrame(wx.Frame):
         self.start(self.doDebug, dialog)
 
     def doDebug(self, dialog):  # put your logic here
+
         absolutepath = os.path.abspath("../")
         sourcecode = absolutepath + "/testcase/suite/"
         testSuite = "../testcase/sort"
@@ -83,7 +101,7 @@ class MyFrame(wx.Frame):
 
         if not os.path.isfile(sourcecode):
             print(sourcecode + "is not file")
-            self.text_contents.AppendText(sourcecode + "is not file")
+            #self.text_contents.AppendText(sourcecode + "is not file")
 
         resultStorge = ResultStorge.ResultStorge(map[type])
         coverageUtil.setPySource(sourcecode)
@@ -121,27 +139,32 @@ class MyFrame(wx.Frame):
         count = 0
         check = 0
         str1 = ""
-        self.text_contents.SetValue("")
+        #self.text_contents.SetValue("")
+        #self.list.ClearAll()
         for item in suspiciousnessRank:
             if item[1] != -1:
                 check = 1
         if check == 0:
-            self.text_contents.AppendText("You must provide a test suite containing both successful abd failed test cases.")
+            #self.text_contents.AppendText("You must provide a test suite containing both successful abd failed test cases.")
+            #self.list.ClearAll()
+            print(1)
         else:
-            self.text_contents.AppendText("The suspiciousness result of program:\n")
-            self.text_contents.AppendText("\tLine\tRank\n")
+            #self.text_contents.AppendText("The suspiciousness result of program:\n")
+            #self.text_contents.AppendText("\tLine\tRank\n")
             if len(suspiciousnessRank) >= 10:
                 for item in suspiciousnessRank:
                     count += 1
-                    str1 = str1 + str("\t{:<1}\t{:<1}\n".format(item[0], count))
+                    #str1 = str1 + str("\t{:<1}\t{:<1}\n".format(item[0], count))
+                    self.grid.AppendRows(1, False)
                     if count ==20:
                        break
             else:
                 for item in suspiciousnessRank:
                     count += 1
-                    str1 = str1 + str("\t{:<1}\t{:<1}\n".format(item[0], count))
-        print(str1)
-        self.text_contents.AppendText(str1)
+                    #str1 = str1 + str("\t{:<1}\t{:<1}\n".format(item[0], count))
+                    self.grid.AppendRows(1, False)
+        #print(str1)
+        #self.text_contents.AppendText(str1)
 
 
     def start(self, func, *args):  # helper method to run a function in another thread
@@ -150,8 +173,10 @@ class MyFrame(wx.Frame):
         thread.start()
 
     def reSet(self, event):
-        self.text_contents.flush()
-        self.text_contents.SetValue("")
+        #self.text_contents.flush()
+        #self.text_contents.SetValue("")
+        #self.list.ClearAll()
+        print(1)
 
 
 if __name__ == '__main__':

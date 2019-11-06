@@ -37,3 +37,45 @@ class ResultStorge:
     def rankBySuspiciousness(self, CoverageList):
         return self.single.rankBySuspiciousness(CoverageList)
 
+    def rankBySuspiciousnessBest(self, suspiciousnessRank):
+        suspiciousness = []
+        i = 1
+        r = 1
+        preitem = []
+        for item in suspiciousnessRank:
+            if i==1:
+                suspiciousness.append([item[0], 1])
+                i+=1
+                preitem = item
+            else:
+                if preitem[1] == item[1]:
+                    suspiciousness.append([item[0], r])
+                else:
+                    suspiciousness.append([item[0], i])
+                    preitem = item
+                    r = i
+                i+=1
+        return suspiciousness
+
+    def rankBySuspiciousnessWorst(self, suspiciousnessRank):
+        suspiciousness = []
+        i = 1
+        rankItem = []
+        preitem = []
+        for item in suspiciousnessRank:
+            if i==1:
+                preitem = item
+            else:
+                if item[1] != preitem[1]:
+                    rankItem.append([i-1, i-1])
+                    preitem = item
+            i+=1
+        rankItem.append([i,i])
+
+        begin = 1
+        for info in rankItem:
+            for j in range(begin, info[0]+1):
+                suspiciousness.append([j, info[1]])
+                begin = j+1
+        return suspiciousness
+

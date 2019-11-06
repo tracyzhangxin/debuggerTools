@@ -10,6 +10,7 @@ class Tarantula:
         # print(suspiciousnessRank)
         return suspiciousnessRank
 
+
     def getTarantula(self, statementCoverage):
         # print(statementCoverage)
         ncf = statementCoverage[0]
