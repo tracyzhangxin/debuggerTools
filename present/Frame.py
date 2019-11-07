@@ -40,15 +40,15 @@ class MyFrame(wx.Frame):
         # self.list.InsertColumn(0, 'Line', width=100)
         # self.list.InsertColumn(1, 'Rank', width=100)
         self.grid = wx.grid.Grid(panel, -1)
-        self.grid.CreateGrid(0, 3)
-        self.grid.SetColSize(0, 150)
-        self.grid.SetColSize(1, 150)
-        self.grid.SetColSize(2, 150)
+        self.grid.CreateGrid(0, 4)
+        self.grid.SetColSize(0, 120)
+        self.grid.SetColSize(1, 120)
+        self.grid.SetColSize(2, 120)
+        self.grid.SetColSize(3, 120)
         self.grid.SetColLabelValue(0, "Line")
         self.grid.SetColLabelValue(1, "RankBest")
         self.grid.SetColLabelValue(2, "RankWorst")
-        #self.grid.AppendRows(1, False)
-        #self.grid.SetCellValue(0,0, "1")
+        self.grid.SetColLabelValue(3, "suspiciousness")
 
 
 
@@ -133,12 +133,12 @@ class MyFrame(wx.Frame):
 
         coverageUtil.clear()
         coverageList = coverageUtil.getLineCoverage(coverageUtil.lines, resultStorge.records)
-        resultlist = resultStorge.rankBySuspiciousness(coverageList)
-        rankResult = resultStorge.rankBySuspiciousnessBest(resultlist)
-        rankResult2 = resultStorge.rankBySuspiciousnessWorst(resultlist)
+        suspiciousness = resultStorge.rankBySuspiciousness(coverageList)
+        bestRank = resultStorge.rankBySuspiciousnessBest(suspiciousness)
+        worstRank = resultStorge.rankBySuspiciousnessWorst(suspiciousness)
 
         #self.text_contents.AppendText(str(resultlist));
-        self.generateReportV2([rankResult, rankResult2])
+        self.generateReportV2([bestRank, worstRank, suspiciousness])
         wx.CallAfter(dialog.Destroy)
 
 
@@ -147,10 +147,12 @@ class MyFrame(wx.Frame):
         for i in range(0, len(suspiciousnessRank[0])):
             best = suspiciousnessRank[0]
             worst = suspiciousnessRank[1]
+            suspiciousness = suspiciousnessRank[2]
             self.grid.AppendRows(1, False)
             self.grid.SetCellValue(i, 0, str(best[i][0]))
             self.grid.SetCellValue(i, 1, str(best[i][1]))
             self.grid.SetCellValue(i, 2, str(worst[i][1]))
+            self.grid.SetCellValue(i, 3, str(suspiciousness[i][1]))
             i+=1
 
     def generateReport(self, suspiciousnessRank):
@@ -181,8 +183,6 @@ class MyFrame(wx.Frame):
                     count += 1
                     #str1 = str1 + str("\t{:<1}\t{:<1}\n".format(item[0], count))
                     self.grid.AppendRows(1, False)
-        #print(str1)
-        #self.text_contents.AppendText(str1)
 
 
     def start(self, func, *args):  # helper method to run a function in another thread
